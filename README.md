@@ -18,12 +18,16 @@ This simulator is designed to demonstrate the physical behavior of heat transfer
 - Compatible with latest Julia version (v1.10+)
 
 ## Dependencies
-Listed in `Project.toml`. Key packages:
 - GLMakie
-- DifferentialEquations
+- CairoMakie
+- Makie
 - ModelingToolkit
+- OrdinaryDiffEq
+- DifferentialEquations
 - NativeFileDialog
 - DelimitedFiles
+- LinearAlgebra
+
 
 ## Usage
 1. Install Julia (1.10 or later).
