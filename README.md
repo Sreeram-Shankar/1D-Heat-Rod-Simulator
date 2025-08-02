@@ -31,6 +31,17 @@ Listed in `Project.toml`. Key packages:
 3. Open `main.jl` in your Julia environment.
 4. Run the script and configure the simulation via the GUI.
 
+## Dependneices
+GLMakie
+CairoMakie
+Makie
+ModelingToolkit
+OrdinaryDiffEq
+DifferentialEquations
+NativeFileDialog
+DelimitedFiles
+LinearAlgebra
+
 ## Example
 A user can model a copper rod with Dirichlet ends and a sine wave initial condition, then choose the Crank–Nicolson method for time integration. The resulting animation shows diffusion across time.
 
