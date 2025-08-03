@@ -77,7 +77,7 @@ function heat_simulation_app()
         #creates and solves the heat ode 
         parameters = (D, bc_type, bc_vals, α)
         problem = ODEProblem(rhs!, u0, tspan, parameters)
-        solution = solve(problem, solver, dt=dt, saveat=dt, adapative=false)
+        solution = solve(problem, solver, dt=dt, saveat=dt, adaptive=false)
         return solution, x
     end
 
@@ -253,8 +253,9 @@ function heat_simulation_app()
         solved, x = [], []
         try
             solved, x = run_calculations(args)
-        catch
+        catch e
             main_label_text[] = "1D Heat Simulation - Simulation Failed, Please Try Again"
+            print(e)
             return nothing
         end
 
