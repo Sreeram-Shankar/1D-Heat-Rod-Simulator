@@ -1,4 +1,4 @@
-# 1D Heat Rod Simulator
+9# 1D Heat Rod Simulator
 
 This project is an interactive simulation of 1D heat conduction in a rod, written entirely in Julia using `GLMakie` for visualization and `DifferentialEquations.jl` for numerical integration.
 
@@ -42,4 +42,4 @@ MIT License
 
 ## Version
 `v0.8.0` — Minor UI fixes and better time stepping. Initial public release.
-
+Currently supports normal blade designs. Planned updates include enhanced blade validation and support for irregular blade shapes. 
